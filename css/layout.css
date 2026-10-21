@@ -23,3 +23,6 @@ main li + li { margin-top: var(--space-1); }
   .site-header { flex-direction: row; align-items: center; justify-content: space-between; padding: var(--space-1) var(--space-3); }
   main { padding: var(--space-3); }
 }
+
+/* Decorative banner image (e.g. assets/rhine.svg): scales to the column. */
+main img { display: block; max-width: 100%; height: auto; }
