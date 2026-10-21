@@ -1,12 +1,39 @@
-/* Design tokens (owner: Designer). */
+/* Design tokens (owner: Designer). Calm and simple.
+   Palette: warm paper ground; Rhine blue-green as the main voice;
+   Münster sandstone red as the accent (the cathedral's red stone).
+   Type: Georgia headings, system sans body. No web fonts.
+   All text pairs are WCAG AA (4.5:1 or better) on the stated ground. */
 :root {
   --font-display: Georgia, "Times New Roman", serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --color-bg: #fbf8f2;
-  --color-text: #1c1c1c;
-  --color-accent: #a4161a;
+
+  /* Type scale (fluid) */
+  --step--1: clamp(.85rem, .83rem + .1vw, .92rem);
+  --step-0: clamp(1.05rem, 1rem + .25vw, 1.15rem);
+  --step-1: clamp(1.3rem, 1.2rem + .5vw, 1.55rem);
+  --step-2: clamp(1.7rem, 1.4rem + 1.4vw, 2.3rem);
+  --step-3: clamp(2.2rem, 1.7rem + 2.5vw, 3.5rem);
+
+  /* Ground and text */
+  --color-bg: #f8f6f1;          /* paper */
+  --color-text: #1d2528;        /* ink, 14.5:1 on bg */
+  --color-muted: #4f5b60;       /* secondary text, 6.5:1 on bg */
+  --color-rule: #d6d3ca;        /* hairlines, decorative only */
+
+  /* Rhine */
+  --color-rhine: #0f5c6e;       /* 7:1 on bg; headings, key links */
+  --color-rhine-deep: #0a3a47;  /* dark ground for light text, 11:1 with --color-on-deep */
+  --color-rhine-tint: #e3eff1;  /* pale panel, text stays --color-text */
+  --color-on-deep: #f8f6f1;
+
+  /* Accent: Münster sandstone red */
+  --color-accent: #9a1b1f;      /* 7:1 on bg */
+
   --space-1: .5rem;
   --space-2: 1rem;
   --space-3: 2rem;
+  --space-4: 4rem;
+  --radius-s: 2px;
+  --radius-m: 6px;
   --measure: 65ch;
 }
