@@ -1,0 +1,7 @@
+/* Base look (owner: Lead Dev). */
+body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); line-height: 1.6; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; }
+a { color: var(--color-accent); }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.brand { font-family: var(--font-display); font-weight: 700; text-decoration: none; }
+[aria-current="page"] { font-weight: 700; }
